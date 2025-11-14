@@ -1,0 +1,42 @@
+city ,latitude,longitude ,elevation ,avg temp
+Tirana,41,19,110,16
+Andora la vella,42,1,1023,10
+Yerevan,40,44,1100,12.6
+Vienna,48,16,350,9.5
+Baku,40,49,28,15.4
+Minsk,53,27,280,6.9
+Brussels,50,4,57,10
+Sarajevo,43,18,550,10
+Sofia,42,23,550,10.1
+Zagreb,45,16,158,11.6
+Nicosia,35,33,220,37
+Prague,50,14,330,13
+Copenhagen,55,12,25,9
+Tallinn,59,24,9,6.5
+Helsinki,60,24,26,6.2
+Paris,48,2,50,11.7
+Tbilisi,41,44,520,13.8
+Riga,56,24,7,7.2
+Berlin,52,13,34,12
+Athens,37,23,220,17.3
+Budapest,47,19,300,10.7
+Reykyavik,64,21,24,5.3
+Dublin,53,6,20,10.2
+Rome,41,12,21,15.9
+London,51,0,24,11.4
+Kiev,50,30,179,9
+Ankara,39,32,938,11.9
+Bern,46,7,540,9.6
+Stockholm,59,18,28,7.3
+Madrid,40,-3,650,21.2
+Ljubljana,46,14,295,10.2
+Bratislava,48,17,124,10.8
+Belgrade,44,20,117,11.9
+San Marino ,43,12,749,4.4
+Moscow,55,37,156,5.7
+Bucharest,44,26,80,11
+Oslo,59,10,150,7.2
+Lisbon,38,-9,2,21.4
+Warsaw,52,21,92,9.1
+Skopje,41,21,240,11.2
+Amsterdam,52,4,2,14
