@@ -2,24 +2,6 @@ import os
 import numpy as np
 import pandas as pd
 
-def load_data():
-    """
-    Load dataset from file
-    Returns:
-        x (ndarray): Input features
-        y (ndarray): Target values
-    """
-    # get data file directory
-    filename = 'temps_data.txt'
-    data_path = get_data_dir(filename)
-
-    data = np.loadtxt(filename, data_path, delimiter=',')
-    
-    x = data[:, 0]
-    y = data[:, 1]
-    return x, y
-
-
 
 def load_data_csv(file_path):
     """
