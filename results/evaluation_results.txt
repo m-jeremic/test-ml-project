@@ -1,4 +1,0 @@
-Model Evaluation Results
--------------------------
-Mean Squared Error: 10.5769
-R-squared: 0.4226

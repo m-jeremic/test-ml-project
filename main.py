@@ -17,6 +17,7 @@ import logging
 # import numpy as np
 # import sklearn
 # import matplotlib
+import matplotlib.pyplot as plt
 import os
 import sys
 import pickle
@@ -169,13 +170,33 @@ def main():
     logger.info(f"Saving results to {output_dir}...")
     
     # Save the trained model
-    model_path = output_dir / "trained_model.pkl"
+    model_dir = output_dir / "model"
+    model_dir.mkdir(parents=True, exist_ok=True)
+    model_path = model_dir / "trained_model.joblib"
     try:
         with open(model_path, 'wb') as f:
             pickle.dump(model, f)
-        logger.info(f"Trained model saved to {model_path}")
+        logger.info(f"Trained model saved to {model_dir}")
     except Exception as e:
         logger.error(f"Failed to save model: {e}")
+
+    # Save the prediction plot
+    figure_dir = output_dir / "figures"
+    figure_dir.mkdir(parents=True, exist_ok=True)
+    figure_path = figure_dir / "prediction_plot.png"
+    predictions = model.predict(X_test)
+    try:
+        with open(figure_path, 'wb'):
+            plt.figure(figsize=(10, 6))
+            plt.scatter(y_test, predictions, alpha=0.7)
+            plt.plot([y_test.min(), y_test.max()], [predictions.min(), predictions.max()], '--r', linewidth=2)
+            plt.xlabel('True Values')
+            plt.ylabel('Predicted Values')
+            plt.title('True Values vs. Predicted Values')
+            plt.savefig(figure_path)
+        logger.info(f"Prediction plot saved to {figure_dir}")
+    except Exception as e:
+        logger.error(f"Failed to save prediction plot: {e}")
 
     # Save the evaluation metrics to a text file
     results_path = output_dir / "evaluation_results.txt"
