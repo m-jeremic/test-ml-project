@@ -1,6 +1,6 @@
-##Average temoerature prediction - the linear regression project
+##Average temperature prediction - the linear regression project
 
--He would like to be able to predict average temperature of cities based on their latitude.
+-We would like to be able to predict average temperature of cities based on their latitude.
 -We already have data for temperatures and latitudes for some European cities.
 
 # Linear Regression Project
@@ -11,7 +11,6 @@ Implementation of linear regression with one variable to predict average tempera
 - `data/`: Contains the dataset file
 - `src/`: Core implementation modules
 - `notebooks/`: Jupyter notebook with analysis
-- `tests/`: Unit tests
 
 ## Setup
 1. Clone the repository ://github.com/yourusername/test-ml-project.git
